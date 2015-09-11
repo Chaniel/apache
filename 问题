@@ -1,0 +1,29 @@
+安装 httpd-2.4.16,以后httpd无法读取conf/httpd.conf, 修改httpd.conf文件没有任何效果。
+
+httpd -V 显示配置选项
+
+
+#file:config.nice
+#! /bin/sh
+#
+# Created by configure
+
+"./configure" \
+"--prefix=/data/apache" \
+"--sysconfdir=/data/apache/conf" \
+"--with-pcre=/data/libs/pcre" \
+"--with-included-apr" \
+"--enable-so" \
+"--enable-ssl" \
+"--enable-cgi" \
+"--enable-rewrite" \
+"--with-zlib" \
+"--with-pcre=/data/libs/pcre/" \
+"--enable-proxy" \
+"--enable-proxy-http" \
+"--enable-proxy-ajp" \
+"--enable-proxy-balancer" \
+"--enable-slotmem-plain" \
+"--enable-modules=most" \
+"--enable-mods-shared=most" \
+"$@"
