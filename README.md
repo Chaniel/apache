@@ -1,1 +1,1 @@
-# apache use
+# apache httpd server usage
