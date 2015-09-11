@@ -1,0 +1,21 @@
+# config.nice
+#! /bin/sh
+#
+# Created by configure
+
+"./configure" \
+"--prefix=/data/apache" \
+"--with-included-apr" \
+"--enable-so" \
+"--enable-ssl" \
+"--enable-cgi" \
+"--enable-rewrite" \
+"--with-zlib" \
+"--enable-proxy" \
+"--enable-proxy-http" \
+"--enable-proxy-ajp" \
+"--enable-proxy-balancer" \
+"--enable-slotmem-plain" \
+"--enable-modules=most" \
+"--enable-mods-shared=most" \
+"$@"
